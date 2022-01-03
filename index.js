@@ -32,7 +32,7 @@ function readingValues(){
         }else{
             formHourse.classList.remove('_bag');
         };
-        if( $Minutes == undefined || $Minutes === null || $Minutes === ''){
+        if( $Minutes == undefined || $Minutes == null || $Minutes == ''){
             document.querySelector('.palataData').classList.add('_hide')
             formMinutes.classList.add('_bag');
         }else{
