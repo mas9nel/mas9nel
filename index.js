@@ -22,15 +22,18 @@ function readingValues(){
     $EndTime = check$EndTime();
     if($NumOfEmploees === undefined || $NumOfEmploees === null || $NumOfEmploees === '' || $Hourse === undefined || $Hourse === null || $Hourse === '' || $Minutes === undefined || $Minutes === null || $Minutes === ''){
         if($NumOfEmploees === undefined || $NumOfEmploees === null || $NumOfEmploees === ''){
+            document.querySelector('.palataData').classList.add('_hide')
             formEmploees.classList.add('_bag');
         }else{
             formEmploees.classList.remove('_bag')};
         if($Hourse === undefined || $Hourse === null || $Hourse === ''){
+            document.querySelector('.palataData').classList.add('_hide')
             formHourse.classList.add('_bag');
         }else{
             formHourse.classList.remove('_bag');
         };
-        if( $Minutes === undefined || $Minutes === null || $Minutes === ''){
+        if( $Minutes == undefined || $Minutes === null || $Minutes == ''){
+            document.querySelector('.palataData').classList.add('_hide')
             formMinutes.classList.add('_bag');
         }else{
             formMinutes.classList.remove('_bag');
