@@ -11,6 +11,9 @@ let IteratePersonal = 0;
 enter.onclick = () => {readingValues();};
 
 function readingValues(){
+    formEmploees.classList.remove('_bag');
+    formMinutes.classList.remove('_bag');
+    formHourse.classList.remove('_bag');
     document.querySelectorAll('.divIn').forEach(e => e.remove());
     $NumOfEmploees = formEmploees.value;
     $Hourse = check$Hourse();
