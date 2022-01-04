@@ -12,7 +12,6 @@ enter.onclick = () => {readingValues();};
 
 function readingValues(){
     document.querySelector('.palataData').classList.add('_hide');
-    formEmploees.classList.remove('_bag');
     formMinutes.classList.remove('_bag');
     formHourse.classList.remove('_bag');
     document.querySelectorAll('.divIn').forEach(e => e.remove());
@@ -24,6 +23,7 @@ function readingValues(){
         if($NumOfEmploees === undefined || $NumOfEmploees === null || $NumOfEmploees === ''){
             document.querySelector('.palataData').classList.add('_hide')
             formEmploees.classList.add('_bag');
+            setTimeout(() => {formEmploees.classList.remove('_bag')},1000)
         }else{
             formEmploees.classList.remove('_bag')};
         if($Hourse === undefined || $Hourse === null || $Hourse === ''){
