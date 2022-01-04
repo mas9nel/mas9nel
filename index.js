@@ -69,9 +69,9 @@ function calculationEndDate(){
     let thatMinutes = 0;
     if($EndTime == true){thatHourse = 6; thatMinutes = 30}else if($EndTime == false){thatHourse = 6};
 
-    if(check >= 0 && check <= 7){
+    if(check >= 0 && check <= 12){
         endDate.setHours(thatHourse, [thatMinutes]);
-    }else if(check > 7 && check <= 23){endDate.setDate(day + 1); endDate.setHours(thatHourse, [thatMinutes]);};
+    }else if(check > 12 && check <= 23){endDate.setDate(day + 1); endDate.setHours(thatHourse, [thatMinutes]);};
     return endDate;
 };
 
@@ -92,7 +92,7 @@ function iteratePersonal($NumOfEmploees, PersonTime, endDate){
     let minutes = EndDate.getMinutes();
     let iterateTime = [];
     let numOfPerson = 1;
-    let date = new Date(EndDate)
+    let date = new Date()
 
     for(let i = 0; i <= numOfEmploees; i++){
         if(i == 0){
