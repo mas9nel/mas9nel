@@ -92,7 +92,7 @@ function iteratePersonal($NumOfEmploees, PersonTime, endDate){
     let minutes = EndDate.getMinutes();
     let iterateTime = [];
     let numOfPerson = 1;
-    let date = new Date()
+    let date = new Date(EndDate)
 
     for(let i = 0; i <= numOfEmploees; i++){
         if(i == 0){
