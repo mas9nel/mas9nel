@@ -57,6 +57,7 @@ function calculationStartDate($Hourse,$Minutes){
     if(thatHourse < 0 || thatMinutes < 0 || isNaN(thatHourse) || isNaN(thatMinutes)){
         return undefined;
     };
+    if(thatHourse <= 6 && thatHourse >= 1){startDate.setDate(day+1)};
     startDate.setHours(thatHourse, [thatMinutes]);
     return startDate;
 };
