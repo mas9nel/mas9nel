@@ -12,7 +12,6 @@ enter.onclick = () => {readingValues();};
 
 function readingValues(){
     document.querySelector('.palataData').classList.add('_hide');
-    formMinutes.classList.remove('_bag');
     document.querySelectorAll('.divIn').forEach(e => e.remove());
     $NumOfEmploees = formEmploees.value;
     $Hourse = check$Hourse();
@@ -48,7 +47,7 @@ function readingValues(){
     }
 };
 function check$EndTime(){return formAgreement.checked ? true : false;};
-function check$Hourse(){return formHourse.value === 0? 24 : formHourse.value}
+function check$Hourse(){return formHourse.value == 0? 24 : formHourse.value}
 
 function calculationStartDate($Hourse,$Minutes){
     let thatHourse = $Hourse;
