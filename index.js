@@ -48,7 +48,7 @@ function readingValues(){
     }
 };
 function check$EndTime(){return formAgreement.checked ? true : false;};
-function check$Hourse(){return formHourse.value === 0? 24 : formHourse.value}
+function check$Hourse(){return formHourse.value == 0? 24 : formHourse.value}
 
 function calculationStartDate($Hourse,$Minutes){
     let thatHourse = $Hourse;
