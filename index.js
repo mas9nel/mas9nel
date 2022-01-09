@@ -34,6 +34,7 @@ function readingValues(){
         if($Minutes == undefined || $Minutes == '' || $Minutes === null){
             document.querySelector('.palataData').classList.add('_hide')
             formMinutes.classList.add('_bag');
+            setTimeout(() => {formMinutes.classList.remove('_bag')},1000);
         }else{
             formMinutes.classList.remove('_bag');
         };
