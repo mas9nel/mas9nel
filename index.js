@@ -121,3 +121,4 @@ function iteratePersonal($NumOfEmploees, PersonTime, endDate){
         numOfPerson++;
     };
 };
+console.log() 
