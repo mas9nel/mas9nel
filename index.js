@@ -71,7 +71,7 @@ function calculationEndDate(){
 
     if(check >= 0 && check <= 6){
         endDate.setHours(thatHourse, [thatMinutes]);
-    }else if(check > 6 && check <= 23){endDate.setDate(day + 1); endDate.setHours(thatHourse, [thatMinutes]);};
+    }else if(check > 6 && check <= 23){endDate.setDate(day); endDate.setHours(thatHourse, [thatMinutes]);};
     return endDate;
 };
 
