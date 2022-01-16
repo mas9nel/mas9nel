@@ -73,7 +73,7 @@ function calculationEndDate(){
     if($EndTime == true){thatHourse = 6; thatMinutes = 30}else if($EndTime == false){thatHourse = 6};
 
     if(check >= 0 && check <= 6){
-        endDate.setHours(thatHourse, [thatMinutes]);
+        endDate.setDate(day +1);endDate.setHours(thatHourse, [thatMinutes]);
     }else if(check > 6 && check <= 23){endDate.setDate(day + 1); endDate.setHours(thatHourse, [thatMinutes]);};
     return endDate;
 };
