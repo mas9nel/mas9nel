@@ -1,42 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>mas9nel</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="wraper">
-        <div class="fullscreen">
-            <div class="fullscreen_body">
-                <form action="#" id="form" class="form_body">
-                    <h1 class="form_title">Расчёт времени</h1>
-                    <div class="formItem">
-                        <label for="formEmploees" class="form_label">Введите колличество человек на смене: <br></label>
-                        <input placeholder="🧍" min="1" max="10" id="formEmploees" type="number" class="form_input">
-                    </div>
-                    <div class="formItem">
-                        <label for="formHourse" class="form_label">Введите со скольки часов сидите(в формате от 0 до 23): <br></label>
-                        <input placeholder="⏳" min="0" max="23" id="formHourse" type="number" class="form_input">
-                    </div>
-                    <div class="formItem">
-                        <label for="formMinutes" class="form_label">Введите со скольки минут сидите(в формате от 0 до 59): <br></label>
-                        <input placeholder="⏳" min="0" max="59" id="formMinutes" type="number" class="form_input">
-                    </div>
-                    <div class="formItem">
-                        <label for="formAgreement" class="form_label">Сидите до 6:30(если галочка поставлена)<br> или до 6 (если не поставлена):<br></label>
-                        <input checked id="formAgreement" type="checkbox" class="checkbox_input">
-                    </div>
-                    <button id="enter" class="formbtn" type="submit">ВВЕСТИ ДАННЫЕ!</button>
-                </form>
-                <div id="palataData" class="palataData _hide"></div>
-            </div>
-        </div>
-    </div>
-
-    <script src="index.js"></script>
+    <header>
+        <h1>Расчёт времени</h1>
+    </header>
+    <main>
+        <form method="get" action="index.html">
+            <b>Колличество человек на смене:</b> <br><input type="number" value="4" class="edit" name="employees" max="10"><br>
+            <b>Время с которого сели:</b> <br>Часы: <input type="number" value="22" class="edit" name="hours_start" max="24"> Минуты:<input type="number" value="00" class="edit" name="minutes_start" max="60"><br>
+            <b>Время подъёма:</b> <br>Часы: <input type="number" value="6" class="edit" name="hours_end" max="24"> Минуты:<input type="number" value="30" class="edit" name="minutes_end" max="60"><br>           
+            <input type="submit" value="Подтвердить" id="submit">
+        </form>
+    </main>
+    <footer id="data"></footer>
+    <script src="script.js"></script>
 </body>
 </html>
