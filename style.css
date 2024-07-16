@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 115%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    color: #ced6e0;
+    background-color: #57606f;
+}
+
+header, main, footer{
+    max-width: 80vw;
+    min-height: 1em;
+    margin: 1em 10vw;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #2f3542;
+    font-size:large;
+    justify-content: center;
+}
+
+main form input{
+    margin: 1em 0;
+}
+
+.edit{
+    max-width: 3em;
+    text-align: center;
+}
+
+#submit{
+    background-color: #ced6e0;
+    color: #505864;
+    border-color: #2f3542;
+    min-width: 5em;
+    min-height: 2em;
+    border-radius: 10%;
+    margin: 0.5em;
+    cursor: pointer;
+}
