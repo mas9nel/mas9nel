@@ -7,7 +7,7 @@ async function content_load(){
     document.getElementById("data").innerHTML = html_content(emploee_distribution, data);
 }
 
-document.addEventListener("DOMContentLoaded", content_load);
+if(data.has("hours_start"))document.addEventListener("DOMContentLoaded", content_load);
 
 const data = new URLSearchParams(document.location.search);
 const emploee_distribution = new Map();
