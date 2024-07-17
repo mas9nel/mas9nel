@@ -12,9 +12,9 @@
     </header>
     <main>
         <form method="get" action="index.html">
-            <b>Колличество человек на смене:</b> <br><input type="number" value="4" class="edit" name="employees" max="10"><br>
-            <b>Время с которого сели:</b> <br>Часы: <input type="number" value="22" class="edit" name="hours_start" max="24"> Минуты:<input type="number" value="00" class="edit" name="minutes_start" max="60"><br>
-            <b>Время подъёма:</b> <br>Часы: <input type="number" value="6" class="edit" name="hours_end" max="24"> Минуты:<input type="number" value="30" class="edit" name="minutes_end" max="60"><br>           
+            <b>Колличество человек на смене:</b> <br><input type="number" value="4" class="edit" name="employees" min="0" max="10"><br>
+            <b>Время с которого сели:</b> <br>Часы: <input type="number" value="22" class="edit" name="hours_start" min="0" max="24"> Минуты:<input type="number" value="00" class="edit" name="minutes_start" min="0" max="60"><br>
+            <b>Время подъёма:</b> <br>Часы: <input type="number" value="6" class="edit" name="hours_end" min="0" max="24"> Минуты:<input type="number" value="30" class="edit" name="minutes_end" min="0" max="60"><br>           
             <input type="submit" value="Подтвердить" id="submit">
         </form>
     </main>
