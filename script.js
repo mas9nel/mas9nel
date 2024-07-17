@@ -1,3 +1,6 @@
+const data = new URLSearchParams(document.location.search);
+const emploee_distribution = new Map();
+
 // выводим по нажатию
 async function content_load(){
     document
@@ -8,9 +11,6 @@ async function content_load(){
 }
 
 if(data.has("hours_start"))document.addEventListener("DOMContentLoaded", content_load);
-
-const data = new URLSearchParams(document.location.search);
-const emploee_distribution = new Map();
 
 // получаем всё время (в минутах) до окончания смены
 function all_time(data){
